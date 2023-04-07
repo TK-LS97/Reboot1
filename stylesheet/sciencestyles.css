@@ -43,11 +43,7 @@ body {
   margin-bottom: 20px;
 }
 
-.card-first {
-  background-image: url(../images/space-galaxy.jpg);
-  text-align: center;
-  background-size: cover;
-}
+
 .card-first p {
   line-height: 2.2;
 }
@@ -66,10 +62,7 @@ a button {
   margin-top: 20px;
 }
 
-.card-third {
-  background-image: url(../images/cinema.jpg);
-  background-size: contain;
-}
+
 .card-third h2 {
   text-transform: uppercase;
 }
@@ -142,6 +135,7 @@ hr {
   grid-row:1;
   background-image: url(../images/Robot.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
   height:500px;
 }
 
@@ -150,10 +144,8 @@ hr {
     grid-row:3;
     height:500px;
     background-image: url(../images/robot2.jpg);
-    /* background-size: ; */
     line-height: 2.3;
 
-    // display: none;
 }
 
 @media(max-width:900px){

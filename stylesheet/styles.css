@@ -68,7 +68,7 @@ a button {
 
 .card-third {
   background-image: url(../images/cinema.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 .card-third h2 {
   text-transform: uppercase;
@@ -138,5 +138,3 @@ hr {
     grid-row: 4;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
