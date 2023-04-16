@@ -121,6 +121,49 @@ hr {
   grid-row: 2;
 }
 
+.register-form {
+  border:none;
+  padding: 20px;
+  width: 300px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 6px;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover{
+  background: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+.show{
+  position: absolute;
+  background:hsl(178deg, 100%, 50%);
+  padding:6px;
+  color:black;
+
+}
+.hidden {
+  display: none;
+}
+
+
+
 @media (max-width: 900px) {
   #container {
     grid-template-columns: 1fr;

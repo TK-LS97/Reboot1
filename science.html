@@ -33,16 +33,35 @@
          for students to showcase their creativity and
          scientific skills by presenting innovative projects
          and experiments.
-  </p>
+      </p>
 
-    <!-- <a href="movie.html" id="button"><button>Read More</button></a> -->
-    </div>
+   </div>
 
     <div class="card card-second">
       <p>The college science fair is a celebration
          of curiosity and intellectual discovery,
          where young minds can shine and inspire
          others to pursue scientific inquiry.</p>
+
+         <form class="register-form" onsubmit="showMessage(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="student-number">Student Number:</label>
+            <input type="text" id="student-number" name="student-number">
+
+            <button type="submit">Register</button>
+         </form>
+
+         <p id="message" class="hidden show">Thank you for registering!</p>
+
+         <script>
+         function showMessage(event) {
+           event.preventDefault();
+           const messageElement = document.getElementById("message");
+           messageElement.classList.remove("hidden");
+         }
+         </script>
     </div>
 
     <!-- <div class="card card-third">

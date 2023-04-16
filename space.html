@@ -34,6 +34,7 @@
          explosive demise of stars, and from the enigmatic
          behavior of dark matter to the elusive nature of
          black holes.
+
      </p>
 
     <!-- <a href="movie.html" id="button"><button>Read More</button></a> -->
@@ -43,9 +44,27 @@
       <p>Space is an endless frontier of awe-inspiring beauty,
          where the laws of physics orchestrate the birth and
          evolution of celestial bodies and the cosmic web of
-         structure. Exploring the vastness of space fills us
-         with wonder and curiosity, and reminds us of our place
-         in the grand scheme of the universe</p>
+         structure.</p>
+
+         <form class="register-form" onsubmit="showMessage(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="student-number">Student Number:</label>
+            <input type="text" id="student-number" name="student-number">
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message" class="hidden show">Thank you for registering!</p>
+
+        <script>
+        function showMessage(event) {
+          event.preventDefault();
+          const messageElement = document.getElementById("message");
+          messageElement.classList.remove("hidden");
+        }
+        </script>
     </div>
 
     <!-- <div class="card card-third">
